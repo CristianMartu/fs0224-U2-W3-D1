@@ -33,7 +33,7 @@ User.differenceAge(person2, person)
 User.differenceAge(person3, person2)
 
 const form = document.getElementById('myForm')
-const posList = document.querySelector('section ul')
+const posList = document.querySelector('section ol')
 
 class Pet {
   constructor(_petName, _ownerName, _species, _breed) {
@@ -48,11 +48,12 @@ class Pet {
   }
 
   static sameName(pet, pet2) {
-    return pet === pet2
+    return console.log(pet.petName === pet2.petName)
   }
 }
 
 const listPet = []
+listPet.push(new Pet('Argos', 'Rocco', 'Cane', 'Labrador'))
 
 const handleSubmit = (event) => {
   event.preventDefault()
@@ -75,4 +76,6 @@ const handleSubmit = (event) => {
 
 form.addEventListener('submit', handleSubmit)
 
-// Pet.sameName(listPet[0].petName, listPet[1].petName)
+const checkName = (n1, n2) => {
+  Pet.sameName(listPet[n1], listPet[n2])
+}
