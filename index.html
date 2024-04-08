@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OOP</title>
+    <style>
+      main {
+        text-align: center;
+      }
+      form {
+        max-width: fit-content;
+        margin-inline: auto;
+      }
+      form > div {
+        margin-block: 2rem;
+        text-align: end;
+      }
+      h3 {
+        display: inline;
+      }
+      section {
+        max-width: fit-content;
+        margin-inline: auto;
+      }
+      section li {
+        margin-block: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Pet</h1>
+      <form id="myForm">
+        <div>
+          <h3>Name pet</h3>
+          <input type="text" id="petName" name="petName" required />
+        </div>
+        <div>
+          <h3>Name owner</h3>
+          <input type="text" id="ownerName" />
+        </div>
+        <div>
+          <h3>Species</h3>
+          <input type="text" id="species" />
+        </div>
+        <div>
+          <h3>Breed</h3>
+          <input type="text" id="breed" />
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+      <section>
+        <ul></ul>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
