@@ -48,9 +48,11 @@ class Pet {
   }
 
   static sameName(pet, pet2) {
-    return console.log(pet.petName === pet2.petName)
+    return pet.ownerName === pet2.ownerName
   }
 }
+
+const checkName = (n1, n2) => Pet.sameName(listPet[n1], listPet[n2])
 
 const listPet = []
 listPet.push(new Pet('Argos', 'Rocco', 'Cane', 'Labrador'))
@@ -75,7 +77,3 @@ const handleSubmit = (event) => {
 }
 
 form.addEventListener('submit', handleSubmit)
-
-const checkName = (n1, n2) => {
-  Pet.sameName(listPet[n1], listPet[n2])
-}
